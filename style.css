@@ -1,0 +1,1277 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+    
+    
+    /*-------FLEX------*/
+    .contenedor{
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+    
+
+    /*--------TITULO------*/
+    
+    .titulo{
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(233, 232, 232, 0.3);
+    
+        color: white;
+        background-color:#966d5f;
+    }
+    .titulo h1{
+        font-family:"Anton", serif;
+        font-size: 40px;
+        font-size: 3rem;
+        animation: blink 2s infinite;
+            
+        }
+        @keyframes blink{
+            0%{opacity: 1;}
+            35%{opacity: 0;}
+            80%{opacity: 1;}
+        }
+        /*------NAVEGACION------*/
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion ul{
+        display: flex;
+    }
+        
+    
+    .navegacion li{
+        list-style: none;
+        
+        }
+    
+    
+    .navegacion li a{
+            text-decoration: none;
+            color:black;
+            background-color:#BCAAA4;
+            font-family:fantasy;
+            padding: 5px;
+            margin: 20px;
+            border-radius: 10px;
+            font-size:1.3em ;
+        
+    }
+    
+    .navegacion ul li a:hover{
+    filter: drop-shadow(1px 0px 4px whitesmoke);
+    border:3px solid #966d5f;
+    
+    }
+    /*------------NAVEGACION----------*/
+    .navbar{
+        font-family: "Anton", serif;
+    
+    
+    }
+    .navbar .nav-link{
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+    
+    }
+    .navbar .nav-link:hover{
+        color:azure;
+        filter: drop-shadow(1px 0px 4px whitesmoke);
+    border:3px solid #966d5f;
+    border-radius: 5px;
+    }
+    .navbar .nav-link.active {
+        color:white;
+    
+    font-weight: bold;
+    }
+    
+    /*------LOGIN----------*/
+    .login{
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+    }
+    
+    
+    
+    .login a{
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: fantasy;
+    background-color:#BCAAA4;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    min-width:100px;
+    align-items: center;
+    display: flex;
+    }
+    
+    .login a:hover{
+    
+    filter: drop-shadow(1px 0px 4px white);
+    border:3px solid #966d5f;
+    }
+    
+    
+                    /*------MENU------*/
+    .menu{
+        font-family: cursive;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        transition: width 0.3s ease-in-out;
+        z-index:1000;
+        overflow: hidden;
+        left:-250px;
+        top:0;
+        padding-top: 20px;
+        background-color: #BCAAA4;
+    
+    }
+    
+    .menu-hamburguesa{
+        font-size: 30px;
+        cursor:pointer;
+        padding: 4px;
+        background-color: #966d5f;
+        color: aliceblue;
+        left:10px;
+        top:10px;
+        z-index: 3000;
+        position: fixed;
+    display: block;
+    border-radius: 5px;
+    
+    }
+    
+    .menu-checkbox{
+        display: none;
+    
+    }
+    
+    .menu-checkbox:checked ~ .menu{ 
+        left:0;
+    
+    }
+    
+    
+    
+    .menu ul{
+    
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    
+    
+    }
+    
+    .menu li{
+        transition: 0.4s all;
+        text-align: center;
+        padding: 15px;
+    
+    
+    }
+    .menu a {
+        text-decoration: none;
+        list-style: none;
+        transition: background 0.2s;
+        padding: 10px;
+        font-size:25px;
+        color:white;
+        border-radius: 5px;
+        display: block;
+    }
+    
+    .menu h2{
+        color: #6D4C41;
+        text-align: center;
+        padding: 8%;
+        padding-bottom: 8%;
+        font-size: 30px;
+    }
+    
+    .menu a:hover{
+        filter: drop-shadow(1px 0px 2px white);
+    border:3px solid #966d5f;
+    }
+    
+    .main-content{
+        flex:1;
+    }
+    /*-------------FORMULARIO-----------*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin:auto;
+        height: 100vh;
+        position: relative;
+      
+        
+    }
+    .col-md-6{
+        background-color:#966d5f;
+        padding:50px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgb(175, 139, 139);
+        margin:20px ;
+    }
+    .mb-3, input, textarea{
+        margin-bottom: 5px;
+        color: black;
+        text-align: center;
+        font-family: cursive;
+        font-size: 1.2em;
+    }
+    
+    .container h2{
+        font-family: fantasy;
+        color:black;
+        font-size: 1.5rem;
+        text-align: center;
+    margin: 20px;}
+    
+    
+    
+    .btn-primary{ important:  !important;
+        background-color: #BCAAA4;
+        color: white;
+        padding: 50px;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+        
+    
+    }  
+    .btn-primary:hover{
+    box-shadow: 0px 0px 15px #d69b4399;}
+    
+    .btn-primary:hover{
+        background-color:#6D4C41;
+        border: solid white;
+    }
+    
+    
+        /*--------FOOTER--------*/
+    .footer{
+        text-align: center;
+        background-color: #6D4C41;
+        color: aliceblue;
+        width: 100%;
+        padding:10px;}
+        
+    
+    
+    
+    
+    .footer p{
+        text-align: center;
+        color: aliceblue;
+        font-size: larger;
+    }
+    .footer a{
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    /*---------GRID--------*/
+    .main{
+        display: grid;
+        grid-template-columns: 10% 1fr ;}
+        
+    
+    .menu{
+            grid-column: 1/2;
+        }
+    
+    
+    .contenido{
+        grid-column: 2/3;
+        width: 100%;
+    
+    
+    }
+    
+    .titulo{
+        display: grid;
+        grid-area: 2/3;
+    }
+    
+    
+    
+    .productos{
+        background-color:#D7CCC8;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        padding: 15px;
+        background-image: url('./Imagenes/imagenes/fondocafe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:20px;
+    background-blend-mode: darken;
+    }
+    
+    
+    
+    .productos img{
+        
+        width: 100%;
+        max-width: 250px;
+        height: 20vh;
+        object-fit: cover;
+        border: 10px;
+        border: 5px solid pink;
+        
+    
+    transition: 0,3 ease-in-out }
+    
+    .productos img:hover{
+        transform: scale(2.0);
+    }
+    
+    
+    .producto-galeria{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 20px;
+        background-color: #966d5f rgba(150, 109, 95, 0.3);
+        padding: 20px;
+        
+    
+    
+    }
+    
+    
+    .productos h2{
+    
+    color: black;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    }
+    
+    .productos h3{
+        color: black;
+        text-align: center;
+        font-size: 2rem ;
+        font-family:"Anton", serif; ;
+    }
+    
+    .productos p{
+        text-align:end;
+        font-size:1.5rem;
+        color:black;}
+    
+    
+    
+    .producto a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:black;
+        background-color:azure;
+        padding: 3PX;
+        border-radius: 10px;
+        text-decoration: none;
+        width: 100%;
+        max-width: 70px;
+        margin: 5px auto;
+        border:3px solid #966d5f;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    
+    
+    }
+    
+    .producto a:hover{
+        filter: drop-shadow(1px 0px 4px WHITE);}
+    
+    
+    /*------MEDIA-------*/
+        @media (max-widht:500px){
+    .menu:focus-within
+    .menu:active{
+    width: 200px;}
+    
+    .menu a{
+        font-size: 10px;
+        padding: 8px;
+    }
+    
+    }
+    
+        /*--------BOOTSTRAP------*/
+    .card img{
+        width: 100%;
+        max-width: 300px;
+        height:34vh;
+        object-fit: cover;
+    }   
+    
+            
+    .card{
+        
+        background-color:#D7CCC8;
+        display:flex;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:2px
+    
+    }    
+    
+    .card h5{
+        color: black;
+        font-size: 3rem;
+        font-family: "Anton", serif;
+    }
+    
+    .card p{
+        text-align: center;
+        font-family: cursive;
+        font-size: 1.0rem;
+    }
+    
+    .btn-primary{
+        background-color: #BCAAA4;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        padding:2px;
+        border-radius: 10px;
+        max-width: fit-content;
+        color: white
+    
+    }
+    
+    .navbar-brand{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .nav-pills{
+        background-color: #966d5f;
+        padding: 10px;
+    
+    }
+    
+    .nav-link{
+        color: aliceblue;
+        font-weight: bold;
+    }
+    
+    .nav-link:hover{
+        background-color:#ecbeae;
+    }
+    
+    .nav-pills .nav-link.active{
+        background-color:#ecbeae;
+    }
+    
+    .navbar{
+        background-color: #ecbeae;
+        
+    
+    }
+    
+    .navbar .nav-link {
+        color:#6D4C41;
+        font-family: cursive;
+        font-size: 1.2rem;
+    ;}
+    
+    
+        .navbar .nav-link:hover{
+            filter: drop-shadow(1px 0px 4px black;
+    border:3px solid #966d5);}
+        
+    .bi-cup-hot{
+        font-size:1.7rem;
+        color: black;
+        animation: steam 5s infinite alternate ease-in-out;
+    
+    }
+    
+    @keyframes steam{
+    0% {transform: translateY(0);}
+    100%{transform: translateY(-8px) ;}
+        
+        
+    }
+    
+    .carta{
+        max-width: 300px;
+    margin:auto;
+    box-shadow: 0 0 15px #f512f5;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #966d5f;
+    }
+    .carta h5{
+        text-align: center;
+        text-shadow: 2px 2px  5px  #df1189d3;
+        font-family: cursive;
+        font-size: 1.4rem;
+    }
+    
+    .card-body{
+    padding: 0px;
+    gap:5px;
+    max-width: 20vh;
+    
+    }
+
+    .carta p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .card-img-top{
+        height:50vh;
+        object-fit: cover;
+
+        
+        
+        
+    }
+    .card-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2px;
+        background-image: url('./Imagenes/imagenes/fondocafe.jpg';);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding:10px;
+        background-blend-mode: darken;}
+    
+        
+    
+    
+    .carousel-inner{
+    
+        box-shadow:  0 0 15px rgb(236, 9, 142), 0 0 30px #0ff, 0 0 45px rgb(243, 4, 123);
+        width: 100%;
+    padding: 5px 5px;}
+    
+    .carousel-inner img{
+        height: 100vh;
+        width: 100%;
+        object-fit:cover;
+    
+    }
+    .carousel-inner2{
+        height: 100vh;
+    }
+    .container img{
+        width: 540px;  
+        height: 250px;
+    }
+    
+    .carousel-inner h5{
+        font-size: 4rem;
+        color:whitesmoke;
+    }
+    
+    
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+        
+    .container h5{
+        font-size: 2.4rem;
+        color: black;
+        font-weight: bold;
+        text-align: start;
+    }
+    
+    .container p{
+        font-weight: bolder;
+        text-align: center;
+        
+    };}
+
+
+/*-------FLEX------*/
+.contenedor{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+
+flex:1;}
+.body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin:0;
+width: 100%;
+}
+.main{
+    flex:1;
+}
+/*--------TITULO------*/
+
+.titulo{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(233, 232, 232, 0.3);
+
+    color: white;
+    background-color:#966d5f;
+}
+.titulo h1{
+    font-family:"Anton", serif;
+    font-size: 40px;
+    font-size: 3rem;
+    animation: blink 2s infinite;
+        
+    }
+    @keyframes blink{
+        0%{opacity: 1;}
+        35%{opacity: 0;}
+        80%{opacity: 1;}
+    }
+    /*------NAVEGACION------*/
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navegacion ul{
+    display: flex;
+}
+    
+
+.navegacion li{
+    list-style: none;
+    
+    }
+
+
+.navegacion li a{
+        text-decoration: none;
+        color:black;
+        background-color:#BCAAA4;
+        font-family:fantasy;
+        padding: 5px;
+        margin: 20px;
+        border-radius: 10px;
+        font-size:1.3em ;
+    
+}
+
+.navegacion ul li a:hover{
+filter: drop-shadow(1px 0px 4px whitesmoke);
+border:3px solid #966d5f;
+
+}
+/*------------NAVEGACION----------*/
+.navbar{
+    font-family: "Anton", serif;
+
+
+}
+.navbar .nav-link{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+.navbar .nav-link:hover{
+    color:azure;
+    filter: drop-shadow(1px 0px 4px whitesmoke);
+border:3px solid #966d5f;
+border-radius: 5px;
+}
+.navbar .nav-link.active {
+    color:white;
+
+font-weight: bold;
+}
+
+/*------LOGIN----------*/
+.login{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+
+
+
+.login a{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: fantasy;
+background-color:#BCAAA4;
+color: black;
+padding: 5px;
+border-radius: 10px;
+margin: 10px;
+text-align: center;
+min-width:100px;
+align-items: center;
+display: flex;
+}
+
+.login a:hover{
+
+filter: drop-shadow(1px 0px 4px white);
+border:3px solid #966d5f;
+}
+
+
+                /*------MENU------*/
+.menu{
+    font-family: cursive;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s ease-in-out;
+    z-index:1000;
+    overflow: hidden;
+    left:-250px;
+    top:0;
+    padding-top: 20px;
+    background-color: #BCAAA4;
+
+}
+
+.menu-hamburguesa{
+    font-size: 30px;
+    cursor:pointer;
+    padding: 4px;
+    background-color: #966d5f;
+    color: aliceblue;
+    left:10px;
+    top:10px;
+    z-index: 3000;
+    position: fixed;
+display: block;
+border-radius: 5px;
+
+}
+
+.menu-checkbox{
+    display: none;
+
+}
+
+.menu-checkbox:checked ~ .menu{ 
+    left:0;
+
+}
+
+
+
+.menu ul{
+
+text-align: center;
+list-style: none;
+padding: 0px;
+
+
+}
+
+.menu li{
+    transition: 0.4s all;
+    text-align: center;
+    padding: 15px;
+
+
+}
+.menu a {
+    text-decoration: none;
+    list-style: none;
+    transition: background 0.2s;
+    padding: 10px;
+    font-size:25px;
+    color:white;
+    border-radius: 5px;
+    display: block;
+}
+
+.menu h2{
+    color: #6D4C41;
+    text-align: center;
+    padding: 8%;
+    padding-bottom: 8%;
+    font-size: 30px;
+}
+
+.menu a:hover{
+    filter: drop-shadow(1px 0px 2px white);
+border:3px solid #966d5f;
+}
+
+.main-content{
+    flex:1;
+}
+/*-------------FORMULARIO-----------*/
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
+    height: 100vh;
+    position: relative;
+  
+    
+}
+.col-md-6{
+    background-color:#966d5f;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(175, 139, 139);
+    margin:20px ;
+}
+.mb-3, input, textarea{
+    margin-bottom: 5px;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.2em;
+}
+
+.container h2{
+    font-family: fantasy;
+    color:black;
+    font-size: 1.5rem;
+    text-align: center;
+margin: 20px;}
+
+
+
+.btn-primary{
+    background-color: #BCAAA4;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    
+
+}  
+.btn-primary:hover{
+box-shadow: 0px 0px 15px #d69b4399}
+
+
+.btn-custom{
+    color: aliceblue;
+    background-color: #e952e9;
+    border-color: white;
+}
+
+.btn custom:hover{
+   box-shadow: 0px 0px 15px #f512f5;
+}
+
+    /*--------FOOTER--------*/
+.footer{
+    text-align: center;
+    background-color: #6D4C41;
+    color: aliceblue;
+    width: 100%;
+    padding:5px;
+    display: grid;
+
+    
+
+}
+
+
+.footer p{
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+}
+.footer a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+/*---------GRID--------*/
+.main{
+    display: grid;
+    grid-template-columns: 10% 1fr ;}
+    
+
+.menu{
+        grid-column: 1/2;
+    }
+
+
+.contenido{
+    grid-column: 2/3;
+    width: 100%;
+
+
+}
+
+.titulo{
+    display: grid;
+    grid-area: 2/3;
+}
+
+
+
+.productos{
+    background-color:#D7CCC8;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 15px;
+    background-image: url('./Imagenes/imagenes/fondocafe.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding:20px;
+background-blend-mode: darken;
+}
+
+
+
+.productos img{
+    
+    width: 100%;
+    max-width: 250px;
+    height: 20vh;
+    object-fit: cover;
+    border: 10px;
+    border: 5px solid pink;
+    
+
+transition: 0,3 ease-in-out }
+
+.productos img:hover{
+    transform: scale(2.0);
+}
+
+
+.producto-galeria{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    background-color: #966d5f rgba(150, 109, 95, 0.3);
+    padding: 20px;
+    
+
+
+}
+
+
+.productos h2{
+
+color: black;
+text-align: center;
+font-family: "Playfair Display", serif;
+font-size: 40px;
+}
+
+.productos h3{
+    color: black;
+    text-align: center;
+    font-size: 2rem ;
+    font-family:"Anton", serif; ;
+}
+
+.productos p{
+    text-align:end;
+    font-size:1.5rem;
+    color:black;
+font-weight: bold;}
+
+
+
+.producto a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    background-color:azure;
+    padding: 3PX;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 70px;
+    margin: 5px auto;
+    border:3px solid #966d5f;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.producto a:hover{
+    filter: drop-shadow(1px 0px 4px WHITE);}
+
+
+/*------MEDIA-------*/
+    @media (max-widht:500px){
+.menu:focus-within
+.menu:active{
+width: 200px;}
+
+.menu a{
+    font-size: 10px;
+    padding: 8px;
+}
+
+}
+
+    /*--------BOOTSTRAP------*/
+.card img{
+    width: 100%;
+    max-width: 300px;
+    height:34vh;
+    object-fit: cover;
+}   
+
+        
+.card{
+    
+    background-color:#D7CCC8;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2px
+
+}    
+
+.card h5{
+    color: black;
+    font-size: 3rem;
+    font-family: "Anton", serif;
+}
+
+.card p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.0rem;
+}
+
+.btn-primary{
+    background-color: #BCAAA4;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    padding:2px;
+    border-radius: 10px;
+    max-width: fit-content;
+    color: white
+
+}
+
+.navbar-brand{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-pills{
+    background-color: #966d5f;
+    padding: 10px;
+
+}
+
+.nav-link{
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    background-color:#ecbeae;
+}
+
+.nav-pills .nav-link.active{
+    background-color:#ecbeae;
+}
+
+.navbar{
+    background-color: #ecbeae;
+    
+
+}
+
+.navbar .nav-link {
+    color:#6D4C41;
+    font-family: cursive;
+    font-size: 1.2rem;
+;}
+
+
+    .navbar .nav-link:hover{
+        filter: drop-shadow(1px 0px 4px black;
+border:3px solid #966d5);}
+    
+.bi-cup-hot{
+    font-size:1.7rem;
+    color: black;
+    animation: steam 5s infinite alternate ease-in-out;
+
+}
+
+@keyframes steam{
+0% {transform: translateY(0);}
+100%{transform: translateY(-8px) ;}
+    
+    
+}
+
+.carta{
+    max-width: 300px;
+margin:auto;
+box-shadow: 0 0 15px #f512f5;
+transition: box-shadow 0.3s ease-in-out;
+background-color: #966d5f;
+}
+.carta h5{
+    text-align: center;
+    text-shadow: 2px 2px  5px  #df1189d3;
+    font-family: cursive;
+    font-size: 1.4rem;
+}
+
+
+
+.card-body{
+padding: 0px;
+gap:5px;
+max-width: 20vh;
+
+}
+
+.card-img-top{
+    height:50vh;
+    object-fit: cover;
+    
+    
+    
+}
+.card-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2PX;
+    background-image: url('./Imagenes/imagenes/fondocafe.jpg';);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:10px;
+    background-blend-mode: darken;}
+
+    
+
+
+.carousel-inner{
+
+    box-shadow:  0 0 15px rgb(236, 9, 142), 0 0 30px #0ff, 0 0 45px rgb(243, 4, 123);
+    width: 100%;
+padding: 5px 5px;}
+
+.carousel-inner img{
+    height: 100vh;
+    width: 100%;
+    object-fit:cover;
+
+}
+.container img{
+    width: 540px;  
+    height: 250px;
+}
+
+.carousel-inner h5{
+    font-size: 4rem;
+    color:whitesmoke;
+}
+
+
+.row{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+    
+
+
+.carousel2 .carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.carousel2 .carousel-item img{
+    width: 100%; 
+    object-fit: cover; }
+
+
+.container h5{
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    text-align: start;
+}
+
+
+.carousel-caption h2{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;}
+
+    .carousel-caption p{
+       
+        
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0 0 5px #fff, 
+                        0 0 10px #fff,  
+                        0 0 20px #ffffffda,  
+                        0 0 40px #f0f,  
+                        0 0 80px #f0f;  
+            font-weight: bold;
+            text-align: center;
+    
+            padding: 20px;
+    }
+
+
+
+.container p{
+    font-weight: bold;
+    text-align: center;
+    
+}
+
