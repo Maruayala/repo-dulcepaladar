@@ -1,0 +1,14 @@
+.bi-cup-hot{
+    font-size:1.7rem;
+    color: rgb(0, 0, 0);
+    animation: steam 5s infinite alternate ease-in-out;
+  
+  
+  
+  @keyframes steam{
+  0% {transform: translateY(0);}
+  100%{transform: translateY(-8px) ;}
+    
+    
+  }
+  }

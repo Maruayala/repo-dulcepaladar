@@ -1,0 +1,12 @@
+
+@use './global';
+@use 'variables';
+@use 'mixin';
+ @use'titulo';
+ @use'navegacion';
+ @use'menu';
+ @use'productos';
+ @use'botones';
+ @use'formulario';
+@use'icono';
+ @use'footer';

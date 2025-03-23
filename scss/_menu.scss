@@ -1,0 +1,37 @@
+.menu {
+    font-family: cursive;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    overflow: hidden;
+    left: -250px;
+    top: 0;
+    padding-top: 20px;
+    background-color: #BCAAA4;
+  
+  
+    
+    .menu-hamburguesa {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 4px;
+      background-color: #966d5f;
+      color: rgb(0, 0, 0);
+      left: 10px;
+      top: 10px;
+      z-index: 3000;
+      position: fixed;
+      display: block;
+      border-radius: 5px;
+    }
+  
+    .menu-checkbox {
+      display: none;
+    }
+  
+    
+    .menu-checkbox:checked ~ .menu {
+      left: 0;}}
+  

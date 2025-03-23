@@ -1,0 +1,45 @@
+
+
+
+
+@use 'mixin' as *;
+
+
+
+#boton-comprar{
+    @include estilo-boton(#c06c84, 1rem, black);}
+    
+
+
+a:hover {
+
+    transform: scale(1.05);}
+
+
+a:active {
+    transform: scale(1.5);
+    background-color: #355c7d;
+}
+    
+
+    #boton-agregar{
+        @include estilo-boton(#6c5b7b, 1rem,black);}
+
+        a:hover {
+            transform: scale(1.05);
+        
+        
+        a:active {
+            transform: scale(1.5);
+        }}
+        
+
+
+
+        //boton formulario//
+    .btn-primary{
+        @include estilo-boton(#355c7d, 2rem, white);}
+        
+    
+    
+    

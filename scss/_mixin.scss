@@ -1,0 +1,14 @@
+// _mixins.scss
+@mixin estilo-boton($color, $size, $color-palabra) {
+    background-color: $color;
+    color: $color-palabra;
+    font-weight: bold;
+    font-size: $size;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}

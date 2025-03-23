@@ -1,0 +1,20 @@
+.titulo{
+    text-align: center;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
+        color: rgb(0, 0, 0);
+        background: linear-gradient(to bottom, #f8b195, #f67280, #c06c84);
+        h1{
+            font-family:"Anton", serif;
+            font-size: 40px;
+            font-size: 4rem;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink{
+            0%{opacity: 2;}
+            40%{opacity: 0;}
+            80%{opacity: 1;}
+        }
+
+
+}
