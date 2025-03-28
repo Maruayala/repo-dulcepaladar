@@ -30,14 +30,14 @@ display: flex;
 
     
         
-            .nav-link{
+.nav-link{
                 font-size: 1rem;
                 font-weight: bold;
                 font-weight: bold;
                 transition: 0.3s ease-in-out;
             
             }
-            .nav-link:hover{
+.nav-link:hover{
                 
                 filter: drop-shadow(1px 0px 4px rgb(255, 255, 255));
             border:3px solid;
@@ -45,12 +45,12 @@ display: flex;
             font-weight: bold;
             }
 
-            .navbar-nav .nav-link:hover{
-                color: #FFFFFF; /* Color blanco */
+.navbar-nav .nav-link:hover{
+                color: #FFFFFF;
                 text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, #FFFFFF;
             }
         
-            .nav-link.active {
+.nav-link.active {
                 color:#c06c84;
             
             font-weight: bold;

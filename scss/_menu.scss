@@ -13,7 +13,7 @@
   
   
     
-    .menu-hamburguesa {
+.menu-hamburguesa {
       font-size: 30px;
       cursor: pointer;
       padding: 4px;
@@ -27,11 +27,11 @@
       border-radius: 5px;
     }
   
-    .menu-checkbox {
+.menu-checkbox {
       display: none;
     }
   
     
-    .menu-checkbox:checked ~ .menu {
+.menu-checkbox:checked ~ .menu {
       left: 0;}}
   
