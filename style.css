@@ -149,17 +149,16 @@
     box-shadow: 0 0 50px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
   }
 }
-.productos1 h5 {
+.card-body h3 {
   color: rgb(0, 0, 0);
-  font-size: 3rem;
-  font-family: fantasy;
+  font-size: 2rem;
+  font-family: fantasy !important;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
   color: rgb(0, 0, 0);
 }
-
-.productos1 p {
-  font-size: larger;
-  font-family: cursive;
+.card-body p {
+  font-size: larger !important;
+  font-family: cursive !important;
 }
 
 .card {
@@ -190,12 +189,11 @@ img:hover {
 }
 .card-producto img {
   width: 50%;
-  height: 50vh;
+  height: 58vh;
   object-fit: cover;
-  align-items: center;
-  justify-content: center;
 }
-.card-producto h5 {
+
+.card-body h3 {
   font-family: "Lilita One", sans-serif;
   font-size: 2.5rem;
   font-size: 40px;
@@ -203,7 +201,7 @@ img:hover {
   text-align: center;
   font-weight: bold;
 }
-.card-producto p {
+.card-body p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -229,12 +227,12 @@ img:hover {
   opacity: 1 !important;
   transform: none !important;
 }
-.carta h5 {
+.carta h3 {
   text-align: center;
   text-shadow: 50px 50px 50px #ff008c;
   font-family: cursive;
   font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
+  text-shadow: 2px 2px 5px white;
   color: rgb(0, 0, 0);
 }
 .carta .carta body {
@@ -269,9 +267,10 @@ img:hover {
   gap: 20px;
   padding: 20px;
   background: radial-gradient(circle, #6c5b7b, #355c7d);
+  display: flex;
   /* Estilo del botón */
 }
-.productos4 h5 {
+.productos4 h3 {
   font-family: fantasy;
   color: black;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
@@ -450,6 +449,47 @@ a:hover a:active {
   text-align: center;
   text-decoration: none;
   color: black;
+}
+
+.imagenes-local {
+  background-color: black;
+}
+
+.imagenes-local .row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imagenes-local .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenes-local img {
+  width: 100%;
+  height: 50vh;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-family: "Lilita One";
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
+  font-size: 3rem;
+  text-decoration: underline;
+  color: hotpink;
+}
+
+P {
+  color: white;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 * {

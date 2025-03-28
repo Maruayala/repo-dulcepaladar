@@ -49,18 +49,21 @@ padding:20px;}
     }
 } 
 
-    .productos1 h5{
-    color: rgb(0, 0, 0);
-    font-size:3rem;
-    font-family: fantasy;
+    .card-body{
+    
+
+
+   h3{ color: rgb(0, 0, 0);
+    font-size:2rem;
+    font-family: fantasy!important;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
     color: rgb(0, 0, 0);
     }
 
-    .productos1 p{
-    font-size: larger;
-    font-family: cursive;
-    }
+    p{
+    font-size: larger!important;
+    font-family: cursive!important;
+    }}
 
 
     .card{
@@ -84,29 +87,28 @@ transform: scale(1.0s);
 
 
  //PRODUCTOS DE DESAYUNO//
- .container2{
+.container2{
     display: flex;
     
     background: linear-gradient(to right, #F67280, #355C7D)
 }
- 
+
 
 
     .card-producto{
         display: flex;
-       
+    
 
     
     img{
         width: 50%;
-        height: 50vh;
+        height:58vh;
         object-fit: cover;
-        align-items: center;
-        justify-content: center;
+    
 
-    }
-
-    h5{
+    }}
+.card-body{
+h3{
         font-family: "Lilita One", sans-serif;
         font-size: 2.5rem;
         font-size: 40px;
@@ -149,12 +151,12 @@ gap:5px;
     transform: none !important;
 
 
-h5{
+h3{
     text-align: center;
     text-shadow: 50px 50px 50px  #ff008c;
     font-family: cursive;
     font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
+    text-shadow: 2px 2px 5px white;
     color: rgb(0, 0, 0);
 }
 
@@ -204,16 +206,18 @@ p{
                     gap: 20px;
                     padding: 20px;
                     background: radial-gradient(circle,  #6c5b7b,#355c7d,);
-                    
                 
-              h5{
+                    display: flex;
+                
+
+        h3{
                     font-family: fantasy;
                     color: black;
                     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
                     font-style: italic;
                     font-size: 3rem;
                 }
-                
+            
                 .card {
                     position: relative;
                     width: 18rem;

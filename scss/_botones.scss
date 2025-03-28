@@ -21,15 +21,14 @@ a:active {
     background-color: #355c7d;
 }
     
-
-    #boton-agregar{
+#boton-agregar{
         @include estilo-boton(#6c5b7b, 1rem,black);}
 
-        a:hover {
+a:hover {
             transform: scale(1.05);
         
         
-        a:active {
+a:active {
             transform: scale(1.5);
         }}
         
@@ -37,8 +36,8 @@ a:active {
 
 
         //boton formulario//
-    .btn-primary{
-        @include estilo-boton(#355c7d, 2rem, white);}
+.btn-primary{
+    @include estilo-boton(#355c7d, 2rem, white);}
         
     
     

@@ -1,0 +1,42 @@
+
+
+
+
+.imagenes-local {
+
+    background-color: black;}
+
+
+.imagenes-local .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; }
+
+.imagenes-local .col-12 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imagenes-local img {
+    width: 100%;
+    height: 50vh;
+    max-width: 350px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    font-family: "Lilita One";
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.979);
+    font-size:3rem;
+    text-decoration: underline;color: hotpink;
+}
+P{
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: oblique;
+}
